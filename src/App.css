@@ -4,22 +4,51 @@
   align-items: center;
   height: 100vh;
 }
-.question-lines{
+.question{
   height: 100px;
   width: 800px;
-  background-color: #0d3063;
+  position: absolute;
+  top:200px;
   display: flex;
   align-items: center;
   padding:0 30px;
-  color: #bdbdbd;
+  color: #bdbdbd81;
   font-size: 30px;
   font-family: monospace;
+}
+.answer{
+  height: 100px;
+  width: 800px;
+  position: absolute;
+  top:200px;
+  display: flex;
+  align-items: center;
+  padding:0 30px;
+  color: #ffffff;
+  font-size: 30px;
+  font-family: monospace;
+  background-color: transparent;
+  border:none
 }
 .input-outer{
   border-radius: 40px;
   position: absolute;
   bottom: 70px;
   padding: 20px 30px;
+}
+@keyframes blink{
+  0% {
+    color: #bdbdbd81;
+  }
+  50% {
+    color:red;
+  }
+  100% {
+    color: #bdbdbd81;
+  }
+}
+.wrong{
+  animation: blink 500ms;
 }
 .input-outer.true{
   background-color: green;
