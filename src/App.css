@@ -1,10 +1,11 @@
 .outer{
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
   align-items: center;
   height: 100vh;
 }
-.question{
+.question,.answer{
   height: 100px;
   width: 800px;
   position: absolute;
@@ -17,16 +18,7 @@
   font-family: monospace;
 }
 .answer{
-  height: 100px;
-  width: 800px;
-  position: absolute;
-  top:200px;
-  display: flex;
-  align-items: center;
-  padding:0 30px;
   color: #ffffff;
-  font-size: 30px;
-  font-family: monospace;
   background-color: transparent;
   border:none
 }
@@ -50,21 +42,40 @@
 .wrong{
   animation: blink 500ms;
 }
-.input-outer.true{
-  background-color: green;
+.keyboard-image{
+  border-radius:"10px";
+  width:"80%";
+  display: none;
 }
-.input-outer.false{
-  background-color: red;
+.result{
+  width: 250px;
+  font-size: 20px;
+  text-align: center;
+  margin: 100px;
+  background-color: rgb(31, 31, 31);
+  display: flex;
+  flex-direction: column;
 }
-.main-input{
-  height: 50px;
-  width: 800px;
-  background-color: transparent;
-  color: white;
-  border:none;
+.wpm{
+  font-size: 25px;
+  margin: 20px;
 }
-.main-input:focus{
-  outline:none;
-  font-size: 30px;
-  font-family: monospace;
+.box-down{
+  display: flex;
+  justify-content: space-between;
+}
+.parameter,.value{
+  margin:10px;
+}
+.correct .value{
+  color:green
+}
+.incorrect .value{
+  color:red
+}
+.box-down:nth-child(2n){
+  background-color: rgb(49, 49, 49);
+}
+.d-none{
+  display: none;
 }
