@@ -1,67 +1,73 @@
-[
-    {
+[{
     "difficulty": "Basic",
-    "text": "asdjf; lsa; afljs; l;j faf; sjl; safdj; lasj; asjfl; jfsl; aj; fsaj; lasfj; lj; asd;"
-    },
-    {
+    "text": "one two three four five six seven eight nine ten"
+},
+{
+    "difficulty": "Basic",
+    "text": "ten nine eight seven six five four three two one"
+},
+{
+    "difficulty": "Basic",
+    "text": "asdjf; lsa; afljs; l;j df faf; sjl; safdj; lasj; asjfl; jfsl; aj; fsaj; lasfj; lj; asd;"
+},
+{
     "difficulty": "Basic",
     "text": "asd;fjlkj ;lk; jlsdf; lkajsd ;flkj; asdfl;kj ;asldfjkl ;adsfjkl ;asdfjkl ;adsfjkl"
-    },
-    {
+},
+{
     "difficulty": "Basic",
     "text": "asdfjkl ;lj; ;sdf ;lk;j ;asld ;fjkl ;adsfjkl ;adsf ;jkl; adsfjkl ;asdf ;jkl ;ads ;fjkl"
-    },
-    {
+},
+{
     "difficulty": "Basic",
     "text": "sdf;l kjasd ;lfk jlk; asdflk ;jlk ;asdf ;jkl ;asd;fjkl; asdflk; jlk; asdf; jkl; adsfjkl"
-    },
-    {
+},
+{
     "difficulty": "Basic",
     "text": "f;djkl ;asfj; ladsj; flk;a dsjfl;k jf;asldf ;jklas; dfjkl; asdfj;lk ;asd; f;jkl; adsfjkl"
-    },
-    {
+},
+{
     "difficulty": "Basic",
-    "text": "lk;asdjf ;lsad;jf kl;asdjf ;lkjasdf ;lkjasd ;lfkja;sldkf ;jlasdf; lkjasd;flk jasdf;lk j"
-    },
-    {
+"text": "lk;asdjf ;lsad;jf kl;asdjf ;lkjasdf ;lkjasd ;lfkja;sldkf ;jlasdf; lkjasd;flk jasdf;lk j"
+},
+{
     "difficulty": "Basic",
-    "text": "kl;jdsf ;lkjasdf ;lkjasd ;lfkj ;asldkfj;l asd;lfjk ;lasdjf; lkjads;lkfj;as dlkjfa;sldkfj"
-    },
-    {
+"text": "kl;jdsf ;lkjasdf ;lkjasd ;lfkj ;asldkfj;l asd;lfjk ;lasdjf; lkjads;lkfj;as dlkjfa;sldkfj"
+},
+{
     "difficulty": "Basic",
     "text": "asdjf;lkj ;asdjf;l kjasdf;lk jads;f lk;jas df;l jasf;dlj; asd;fl jlkas;df jkl;as dfjkl;as"
-    },
-    {
+},
+{
     "difficulty": "Basic",
     "text": "asjdf;l kjadf;lk jads;fl kjads;f lkjasd;flk jads;f l;kasjd;fl kjasdf;l jads;f lkj;adsfl;kj"
-    },
-    {
+},
+{
     "difficulty": "Basic",
     "text": "asdfj;lk asjdf; lkjasd ;lkjasd ;lfkjadsf ;lkjadsf ;lkj;adflkj ;asdf;lj asdfj;lk jads;flkj"
-    },
-    {
+},
+{
     "difficulty": "Basic",
     "text": "asdfl;jk asdfjlk; jasdf;lkj asdfj;lk jasdf;l jkadsf;j lkasdf;j lkasdf;jl kasdf;jl kjasdf;j"
-    },
-    {
+},
+{
     "difficulty": "Basic",
     "text": "asjdf;l kjasdf;lkj asd;lfk jads;lf kjasd;fl kjads;fl kjads;f lkjads;flk jads;flk jads;flkj"
-    },
-    {
+},
+{
     "difficulty": "Basic",
     "text": "asdjf;lkj asd;flkjasd; flkjads;flk jads;flk jads;lfk jadsf;l kjads;f lkjads;flk jads;flk j"
-    },
-    {
+},
+{
     "difficulty": "Basic",
     "text": "asdjf; lkjasd;fl kjasdf;l kjasdf;l kjasdf;lkj asd;flkj asdfj;lkj asdfj;lkj asdfj;lkj asd;f"
-    },
-    {
+},
+{
     "difficulty": "Basic",
     "text": "asdjf;l kjasdf;lk jads;f lkjasd;flk jads;flk jads;flk jadsf;l kjasdf;l kjads;f l;kasjd;flkj"
-    },
-    {
+},
+{
     "difficulty": "Basic",
     "text": "asdfj;lk jads;f lkjasdf;l kjasdf;lk jadsf;l kjasdf;l kjasd;lfk jadsf;l kjasdf;l kjads;flk j"
-    }
-]
+}]
 
