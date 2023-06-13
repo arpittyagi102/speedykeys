@@ -16,7 +16,8 @@
   background-color: red;
   border:none;
   color:white;
-  padding:5px;
+  padding:10px;
+  height: 40px;
   border-radius: 5px;
   background-color: rgb(31, 31, 31);
 }

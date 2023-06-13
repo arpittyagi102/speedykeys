@@ -11,12 +11,14 @@ function App() {
   const [timetaken,settimetaken]=useState(0);
   const [correct,setcorrect]=useState(0)
   const [incorrect,setincorrect]=useState(0);
-  const [i,seti]=useState(0);             
+  const [i,seti]=useState(18);             
   const [string,setstring]=useState(data[i].text)
+  const [timeleft,settimeleft]=useState(timeinput);
 
   function handleinputchange(e){
+    if(timetaken)
+      return;
     if(starttime===0){
-      setstarttime(Date.now());
       start();
     }
     if(string===e.target.value){
@@ -47,10 +49,25 @@ function App() {
     }
   }, [i]);
 
+  useEffect(() => {
+    let interval = null;   
+    if (timeleft > 0) {
+      interval = setInterval(() => {
+        settimeleft(timeleft => timeleft - 1);
+      }, 1000);
+    }
+    return () => {
+      clearInterval(interval);
+    };
+  }, [timeleft]);
+
+
   function start(){
+    setstarttime(Date.now());
     setTimeout(() => {
       completed();
-    }, timeinput*1000);
+    }, timeinput*1000);  
+    settimeleft(timeinput);
   }
 
   function completed(){
@@ -61,7 +78,12 @@ function App() {
   return (
     <>
       <div className='outer'>
-        <h1 style={{textAlign:"center"}}>Speedy Keys</h1>
+        {starttime===0 ? 
+        (
+          <h1 style={{textAlign:"center"}}>Speedy Keys</h1>
+        ):(
+          <h1 style={{textAlign:"center"}}>{timeleft}</h1>
+        )}
         <div className='dropdowns'>
           <select>
             <option>Basic</option>
