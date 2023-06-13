@@ -1,70 +1,83 @@
-# Getting Started with Create React App
+# Speedy Keys
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Welcome to Speedy Keys, a web-based typing speed test application that allows you to practice and improve your typing skills. Test your typing speed, accuracy, and efficiency with different difficulty levels and time durations.
+<!-- 
+![Speedy Keys Typing Speed Test](screenshot.png) -->
 
-## Available Scripts
+## Features
 
-In the project directory, you can run:
+- Choose from three difficulty levels: Basic, Intermediate, and Advanced.
+- Select the desired time duration for the typing test.
+- Get real-time feedback on your typing speed, accuracy, and performance.
+- See the number of correct and incorrect characters typed.
+- View your typing speed in words per minute (WPM).
+- Check your gross speed and accuracy percentage.
+- Track the time taken to complete the typing test.
 
-### `npm start`
+<!-- ## Demo
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+You can try out the live demo of the Speedy Keys application [here](https://your-demo-url.com). -->
+## Features i need to add
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- A Restart button
+- difficulty for typing practice
+- improve JSON file
 
-### `npm test`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### `npm run build`
+## Installation
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+To run the Speedy Keys typing speed test application locally, follow these steps:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+1. Clone the repository:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+```bash
+git clone https://github.com/your-username/speedy-keys.git
+```
 
-### `npm run eject`
+2. Navigate to the project directory:
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+```bash
+cd speedykeys
+```
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+3. Install the dependencies:
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+```bash
+npm install
+```
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+4. Start the development server:
 
-## Learn More
+```bash
+npm start
+```
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+5. Open your web browser and visit `http://localhost:3000` to access the Speedy Keys application.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## Usage
 
-### Code Splitting
+1. Select the desired difficulty level from the dropdown menu: Basic, Intermediate, or Advanced.
+2. Choose the time duration for the typing test from the second dropdown menu.
+3. The typing area will display a string of text that you need to type.
+4. Start typing in the text area. Your input will be compared to the expected string.
+5. Once you complete the typing test or the time runs out, your typing speed, accuracy, and performance will be displayed.
+6. You can start a new typing test by selecting a different difficulty level or time duration.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## Contributing
 
-### Analyzing the Bundle Size
+Contributions are welcome! If you find any issues or have suggestions for improvement, please feel free to submit a pull request or open an issue on the project repository.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+<!-- ## License
 
-### Making a Progressive Web App
+The Speedy Keys Typing Speed Test application is licensed under the [MIT License](LICENSE). -->
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
 
-### Advanced Configuration
+## Contact
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+For any inquiries or feedback, please contact me at arpittyagirocks@gmail.com
 
-### Deployment
+[Linkedin](https://www.linkedin.com/in/arpittyagirocks/)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
 
-### `npm run build` fails to minify
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)

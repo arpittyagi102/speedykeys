@@ -105,7 +105,7 @@ function App() {
               onChange={handleinputchange}
               autoFocus
               />
-        <div className={`result  ${timetaken===0?"d-none":""}`}>
+        <div className={`result  ${timetaken && "d-none"}`}>
           <div className='wpm'>
             {Math.round((correct*12)/timeinput)} wpm
           </div>
