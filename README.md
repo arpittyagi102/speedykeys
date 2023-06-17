@@ -20,8 +20,10 @@ You can try out the live demo of the Speedy Keys application [here](https://your
 ## Features i need to add
 
 - A Restart button
+: Add a restart button that will not reload the whole page
 - difficulty for typing practice
 - improve JSON file
+: Ask ChatGPT for the JSON file
 
 
 
