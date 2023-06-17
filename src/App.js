@@ -14,7 +14,19 @@ function App() {
   const [i,seti]=useState(18);             
   const [string,setstring]=useState(data[i].text)
   const [timeleft,settimeleft]=useState(timeinput);
+  const [diffinput,setdiffinput]=useState(18);
 
+  function restart(e){
+    setdiffinput(e.target.value);
+    seti(e.target.value);
+    setinputvalue("");
+    setstarttime(0);
+    settimetaken(0);
+    setcorrect(0);
+    setincorrect(0);
+    setstring(data[i].text);
+  }
+  
   function handleinputchange(e){
     if(timetaken)
       return;
@@ -41,7 +53,6 @@ function App() {
     setinputvalue(e.target.value);
     setcorrect(correct+1);
   }
-
 
   useEffect(() => {
     if (i < data.length) {
@@ -85,10 +96,10 @@ function App() {
           <h1 style={{textAlign:"center"}}>{timeleft}</h1>
         )}
         <div className='dropdowns'>
-          <select>
-            <option>Basic</option>
-            <option>Intermediate</option>
-            <option>Advanced</option>
+          <select value={diffinput} onChange={restart}>
+            <option value={0}>Basic</option>
+            <option value={18}>Intermediate</option>
+            <option value={30}>Advanced</option>
           </select>
           <select value={timeinput} onChange={(e)=>{settimeinput(e.target.value)}}>
             <option value="30">00:30</option>
@@ -105,7 +116,7 @@ function App() {
               onChange={handleinputchange}
               autoFocus
               />
-        <div className={`result  ${timetaken && "d-none"}`}>
+        <div className={`result  ${timetaken===0 && "d-none"}`}>
           <div className='wpm'>
             {Math.round((correct*12)/timeinput)} wpm
           </div>
@@ -130,7 +141,7 @@ function App() {
             <div className="value">{Math.round(timeinput)} s</div>
           </div>
         </div>
-        <img src={keyboard} alt='keyboard' className={` keyboard image ${timetaken===0?"":"d-none"}`}/>
+        <img src={keyboard} alt='keyboard' className={`keyboard image ${timetaken!==0 && "d-none"}`}/>
       </div>
     </>
   );
