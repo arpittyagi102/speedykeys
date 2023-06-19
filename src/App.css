@@ -38,7 +38,8 @@
 .answer{
   color: #ffffff;
   background-color: transparent;
-  border:none
+  border:none;
+  resize: none;
 }
 .input-outer{
   border-radius: 40px;
@@ -93,6 +94,18 @@
 }
 .box-down:nth-child(2n){
   background-color: rgb(49, 49, 49);
+}
+.box-down.refresh{
+  display: flex;
+  justify-content: center;
+}
+.refresh-icon{
+  fill:White;
+  height: 20px;
+  margin:10px;
+}
+.refresh-icon:hover{
+  fill:rgba(255, 255, 255, 0.759)
 }
 .d-none{
   display: none;
