@@ -11,7 +11,7 @@ function App() {
   const [timetaken,settimetaken]=useState(0);
   const [correct,setcorrect]=useState(0)
   const [incorrect,setincorrect]=useState(0);
-  const [i,seti]=useState(18);             
+  const [i,seti]=useState(30);             
   const [string,setstring]=useState(data[i].text)
   const [timeleft,settimeleft]=useState(timeinput);
   const [diffinput,setdiffinput]=useState(18);
@@ -23,19 +23,17 @@ function App() {
     setcorrect(0);
     setincorrect(0);
     seti(diffinput);
-    setstring(data[i].text);
   }
   
   function restartbydiffinput(e){
-    setdiffinput(e.target.value);
-    seti(e.target.value);
+    const newValue = parseInt(e.target.value)
+    setdiffinput(newValue);
     setinputvalue("");
     setstarttime(0);
     settimetaken(0);
     setcorrect(0);
     setincorrect(0);
-    console.log(`I is now changed to ${i}`);
-    setstring(data[e.target.value].text);
+    seti(newValue);
   }
   
   function handleinputchange(e){
@@ -46,15 +44,11 @@ function App() {
     }
     if(string===e.target.value){
       setinputvalue("");
-      console.log("Now we will change the i =",i);
-      seti(prevIndex => prevIndex+1);
-      console.log("Changed value of i is ,",i);
-      setstring(data[i].text);
-      console.log("Now the changed string is ",string);
+      seti(prevIndex => prevIndex + 1)
       return;
     }
-    if(e.target.value.length===49)
-      setinputvalue(inputvalue+" ")
+    /* if(e.target.value.length===49)
+      setinputvalue(inputvalue+" ") */
     if(!string.startsWith(e.target.value)){
       setwrong(true);
       setTimeout(() => setwrong(false), 500);
@@ -110,7 +104,7 @@ function App() {
         <div className='dropdowns'>
           <select value={diffinput} onChange={restartbydiffinput}>
             <option value={0}>Basic</option>
-            <option value={18}>Intermediate</option>
+            <option value={19}>Intermediate</option>
             <option value={30}>Advanced</option>
           </select>
           <select value={timeinput} onChange={(e)=>{settimeinput(e.target.value)}}>
