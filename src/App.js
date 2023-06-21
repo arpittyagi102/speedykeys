@@ -4,6 +4,7 @@ import keyboard from './Asset/keyboard-image.png';
 import data from './Asset/data.json';
 
 function App() {
+
   const [wrong,setwrong]=useState(false);
   const [inputvalue, setinputvalue]=useState("");
   const [timeinput,settimeinput]=useState(30);
@@ -11,7 +12,7 @@ function App() {
   const [timetaken,settimetaken]=useState(0);
   const [correct,setcorrect]=useState(0)
   const [incorrect,setincorrect]=useState(0);
-  const [i,seti]=useState(30);             
+  const [i,seti]=useState(4);             
   const [string,setstring]=useState(data[i].text)
   const [timeleft,settimeleft]=useState(timeinput);
   const [diffinput,setdiffinput]=useState(18);
