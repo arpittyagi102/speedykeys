@@ -5,17 +5,17 @@ import data from './Asset/data.json';
 
 function App() {
 
-  const [wrong,setwrong]=useState(false);
-  const [inputvalue, setinputvalue]=useState("");
-  const [timeinput,settimeinput]=useState(30);
-  const [starttime,setstarttime]=useState(0);
-  const [timetaken,settimetaken]=useState(0);
-  const [correct,setcorrect]=useState(0)
-  const [incorrect,setincorrect]=useState(0);
-  const [i,seti]=useState(4);             
-  const [string,setstring]=useState(data[i].text)
-  const [timeleft,settimeleft]=useState(timeinput);
-  const [diffinput,setdiffinput]=useState(18);
+  const [wrong, setwrong] = useState(false);
+  const [inputvalue, setinputvalue] = useState("");
+  const [timeinput, settimeinput] = useState(30);
+  const [starttime, setstarttime] = useState(0);
+  const [timetaken, settimetaken] = useState(0);
+  const [correct, setcorrect] = useState(0)
+  const [incorrect, setincorrect] = useState(0);
+  const [i, seti] = useState(53);
+  const [string, setstring] = useState(data[i].text)
+  const [timeleft, settimeleft] = useState(timeinput);
+  const [diffinput, setdiffinput] = useState(18);
 
   function restart() {
     setinputvalue("");
