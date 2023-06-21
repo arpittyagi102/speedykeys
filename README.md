@@ -1,5 +1,7 @@
 # Speedy Keys
 
+![Alt text](src\Asset\demo.gif)
+
 Welcome to Speedy Keys, a web-based typing speed test application that allows you to practice and improve your typing skills. Test your typing speed, accuracy, and efficiency with different difficulty levels and time durations.
 <!-- 
 ![Speedy Keys Typing Speed Test](screenshot.png) -->
