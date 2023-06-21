@@ -4,6 +4,7 @@ import keyboard from './Asset/keyboard-image.png';
 import data from './Asset/data.json';
 
 function App() {
+
   const [wrong, setwrong] = useState(false);
   const [inputvalue, setinputvalue] = useState("");
   const [timeinput, settimeinput] = useState(30);
@@ -23,19 +24,17 @@ function App() {
     setcorrect(0);
     setincorrect(0);
     seti(diffinput);
-    setstring(data[i].text);
   }
-
-  function restartbydiffinput(e) {
-    setdiffinput(e.target.value);
-    seti(e.target.value);
+  
+  function restartbydiffinput(e){
+    const newValue = parseInt(e.target.value)
+    setdiffinput(newValue);
     setinputvalue("");
     setstarttime(0);
     settimetaken(0);
     setcorrect(0);
     setincorrect(0);
-    // console.log(`I is now changed to ${i}`);
-    setstring(data[e.target.value].text);
+    seti(newValue);
   }
 
   function handleinputchange(e) {
@@ -46,17 +45,12 @@ function App() {
     }
     if (string === e.target.value) {
       setinputvalue("");
-      console.log("Now we will change the i =", typeof (i));
-      seti(prevIndex => parseInt(prevIndex) + 1);
-
-      console.log("Changed value of i is ,", i);
-      setstring(data[i].text);
-      console.log("Now the changed string is ", string);
+      seti(prevIndex => prevIndex + 1)
       return;
     }
-    // if (e.target.value.length === 49)
-    //   setinputvalue(inputvalue + " ")
-    if (!string.startsWith(e.target.value)) {
+    /* if(e.target.value.length===49)
+      setinputvalue(inputvalue+" ") */
+    if(!string.startsWith(e.target.value)){
       setwrong(true);
       setTimeout(() => setwrong(false), 500);
       setincorrect(incorrect + 1);
@@ -111,7 +105,7 @@ function App() {
         <div className='dropdowns'>
           <select value={diffinput} onChange={restartbydiffinput}>
             <option value={0}>Basic</option>
-            <option value={18}>Intermediate</option>
+            <option value={19}>Intermediate</option>
             <option value={30}>Advanced</option>
           </select>
           <select value={timeinput} onChange={(e) => { settimeinput(e.target.value) }}>
