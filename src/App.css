@@ -110,3 +110,8 @@
 .d-none{
   display: none;
 }
+@media (max-width : 1400px){
+  .keyboard.image{
+    width:90%;
+  }
+}
