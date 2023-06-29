@@ -4,6 +4,23 @@
   justify-content: space-between;
   align-items: center;
   height: 100vh;
+  background-color: #212529;
+}
+.light{
+  background-color: rgb(196, 222, 234);
+}
+.Heading{
+  text-align: center;
+}
+.Headinglight{
+  color: black;
+}
+.time{
+  text-align: center;
+  
+}
+.timeLight{
+  color: rgb(73, 90, 99);
 }
 .dropdowns{
   display: flex;
@@ -12,6 +29,7 @@
   position: absolute;
   top :100px;
 }
+
 .dropdowns select{
   background-color: red;
   border:none;
@@ -21,9 +39,23 @@
   border-radius: 5px;
   background-color: rgb(31, 31, 31);
 }
+.DropdownLight select{
+   background-color: rgba(39, 146, 167, 0);
+  border:none;
+  color:rgb(0, 0, 0);
+  padding:10px;
+  height: 40px;
+  border-radius: 5px;
+  background-color: rgb(247, 247, 247);
+
+}
 .dropdowns option:nth-child(2n){
   background-color: rgb(49, 49, 49);
 }
+.DropdownLight option:nth-child(2n){
+  background-color: antiquewhite;
+}
+
 .question,.answer{
   height: 100px;
   width: 800px;
@@ -35,11 +67,27 @@
   font-size: 30px;
   font-family: monospace;
 }
+.questionLight,.answerLight{
+   height: 100px;
+  width: 800px;
+  position: absolute;
+  top:200px;
+  align-items: center;
+  padding:0 30px;
+  color: rgb(106, 119, 126);
+  font-size: 30px;
+  font-family: monospace;
+}
+
+
 .answer{
   color: #ffffff;
   background-color: transparent;
   border:none;
   resize: none;
+}
+.answerLight{
+  color: black;
 }
 .input-outer{
   border-radius: 40px;
@@ -71,9 +119,21 @@
   font-size: 20px;
   text-align: center;
   margin: 100px;
-  background-color: rgb(31, 31, 31);
+  background-color: rgb(0, 0, 0);
   display: flex;
   flex-direction: column;
+  z-index: 1;
+}
+.resultLight{
+  background-color: rgb(64, 192, 206);
+   width: 250px;
+  font-size: 20px;
+  text-align: center;
+  margin: 100px;
+  background-color:#98c1d9;
+  display: flex;
+  flex-direction: column;
+  z-index: 1;
 }
 .wpm{
   font-size: 25px;
@@ -87,13 +147,14 @@
   margin:10px;
 }
 .correct .value{
-  color:green
+  color:rgb(45, 249, 45)
 }
+
 .incorrect .value{
   color:red
 }
 .box-down:nth-child(2n){
-  background-color: rgb(49, 49, 49);
+  background-color: #3d5a80;
 }
 .box-down.refresh{
   display: flex;
