@@ -18,7 +18,7 @@ Welcome to Speedy Keys, a web-based typing speed test application that allows yo
 
 <!-- ## Demo
 
-You can try out the live demo of the Speedy Keys application [here](https://your-demo-url.com). -->
+You can try out the live demo of the Speedy Keys application [here](https://your-demo-url.com). --> 
 ## Features i need to add
 
 - A Restart button
