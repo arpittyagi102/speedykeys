@@ -15,5 +15,5 @@ code {
 }
 
 input:focus,textarea:focus{
-  outline:none;
+  outline:none; 
 }
