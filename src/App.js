@@ -117,7 +117,7 @@ function App() {
         <div  className={`dropdowns ${mode===true?"DropdownLight":""}`}>
           <select value={diffinput} onChange={restartbydiffinput}>
             <option value={0}>Basic</option>
-            <option value={19}>Intermediate</option>
+            <option value={19}>Intermediate </option>
             <option value={30}>Advanced</option>
           </select>
           <select value={timeinput} onChange={(e) => { settimeinput(e.target.value) }}>
