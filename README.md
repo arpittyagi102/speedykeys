@@ -75,7 +75,7 @@ Contributions are welcome! If you find any issues or have suggestions for improv
 <!-- ## License
 
 The Speedy Keys Typing Speed Test application is licensed under the [MIT License](LICENSE). -->
-
+ 
 
 ## Contact
 
